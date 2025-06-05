@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Hub - Cadastrar Cursos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="dashboard.html" class="icon">←</a>
+            <div class="logo">Study Hub</div>
+            <a href="perfil.html" class="icon">👤</a>
+        </header>
+        
+        <h2>Cadastrar Curso</h2>
+        
+        <div class="card">
+            <h3>Informações Básicas</h3>
+            
+            <div class="input-group">
+                <label for="titulo-curso">Título do Curso</label>
+                <input type="text" id="titulo-curso" placeholder="Ex: Introdução à Programação">
+            </div>
+            
+            <div class="input-group">
+                <label for="area-curso">Área</label>
+                <input type="text" id="area-curso" placeholder="Ex: Tecnologia, Negócios">
+            </div>
+            
+            <div class="input-group">
+                <label for="nivel-curso">Nível</label>
+                <select id="nivel-curso">
+                    <option>Selecione...</option>
+                    <option>Iniciante</option>
+                    <option>Intermediário</option>
+                    <option>Avançado</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Detalhes do Curso</h3>
+            
+            <div class="input-group">
+                <label for="descricao-curso">Descrição</label>
+                <textarea id="descricao-curso" placeholder="Descreva o curso em detalhes" style="min-height: 100px;"></textarea>
+            </div>
+            
+            <div class="input-group">
+                <label for="objetivos-curso">Objetivos</label>
+                <textarea id="objetivos-curso" placeholder="O que os alunos aprenderão?" style="min-height: 80px;"></textarea>
+            </div>
+            
+            <div class="input-group">
+                <label for="publico-curso">Público-alvo</label>
+                <textarea id="publico-curso" placeholder="Para quem este curso é destinado?" style="min-height: 60px;"></textarea>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Estrutura do Curso</h3>
+            
+            <div class="input-group">
+                <label for="duracao-curso">Duração (horas)</label>
+                <input type="number" id="duracao-curso" placeholder="Ex: 40">
+            </div>
+            
+            <div class="input-group">
+                <label for="modulos-curso">Número de Módulos</label>
+                <input type="number" id="modulos-curso" placeholder="Ex: 8">
+            </div>
+            
+            <div style="margin-top: 15px;">
+                <h4>Conteúdos</h4>
+                <div id="conteudos-container">
+                    <!-- Conteúdos serão adicionados dinamicamente -->
+                </div>
+                <button class="btn btn-small btn-outline" style="margin-top: 10px;" onclick="addConteudo()">+ Adicionar Conteúdo</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Informações Adicionais</h3>
+            
+            <div class="input-group">
+                <label for="inicio-curso">Data de Início</label>
+                <input type="date" id="inicio-curso">
+            </div>
+            
+            <div class="input-group">
+                <label for="vagas-curso">Vagas Disponíveis</label>
+                <input type="number" id="vagas-curso" placeholder="Ex: 30">
+            </div>
+            
+            <div class="input-group">
+                <label for="link-curso">Link para inscrição</label>
+                <input type="url" id="link-curso" placeholder="https://">
+            </div>
+            
+            <a href="#" class="btn">Publicar Curso</a>
+        </div>
+        
+        <div class="tab-bar">
+            <a href="dashboard.html">
+                <span class="icon">🏠</span>
+                <span>Início</span>
+            </a>
+            <a href="cadastrar-oportunidades.html">
+                <span class="icon">➕</span>
+                <span>Oportunidades</span>
+            </a>
+            <a href="cadastrar-cursos.html" class="active-tab">
+                <span class="icon">🎓</span>
+                <span>Cursos</span>
+            </a>
+            <a href="relatorio-impacto.html">
+                <span class="icon">📈</span>
+                <span>Relatórios</span>
+            </a>
+        </div>
+        
+        <script>
+            function addConteudo() {
+                const container = document.getElementById('conteudos-container');
+                const div = document.createElement('div');
+                div.style.marginBottom = '10px';
+                div.innerHTML = `
+                    <input type="text" placeholder="Título do conteúdo" style="width: 70%; padding: 8px; margin-right: 5px;">
+                    <button class="btn btn-small" style="width: auto; padding: 8px 10px;">✕</button>
+                `;
+                container.appendChild(div);
+            }
+        </script>
+    </div>
+</body>
+</html>

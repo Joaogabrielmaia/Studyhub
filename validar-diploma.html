@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Hub - Validar Diploma</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="dashboard.html" class="icon">←</a>
+            <div class="logo">Study Hub</div>
+            <a href="perfil.html" class="icon">👤</a>
+        </header>
+        
+        <h2>Validar Diploma</h2>
+        
+        <div class="card">
+            <h3>Enviar Documentos</h3>
+            <p>Faça upload dos documentos necessários para validação:</p>
+            
+            <div style="border: 2px dashed #ddd; padding: 20px; text-align: center; margin: 15px 0; border-radius: 8px;">
+                <p>📄 Arraste ou clique para enviar arquivos</p>
+                <input type="file" style="display: none;" id="file-upload">
+                <label for="file-upload" class="btn btn-outline" style="display: inline-block; width: auto;">Selecionar Arquivos</label>
+            </div>
+            
+            <p style="font-size: 12px; color: #666;">Formatos aceitos: PDF, JPG, PNG (Tamanho máximo: 5MB cada)</p>
+        </div>
+        
+        <div class="card">
+            <h3>Informações do Diploma</h3>
+            
+            <div class="input-group">
+                <label for="instituicao">Instituição de Ensino</label>
+                <input type="text" id="instituicao" placeholder="Nome da instituição">
+            </div>
+            
+            <div class="input-group">
+                <label for="curso">Curso</label>
+                <input type="text" id="curso" placeholder="Nome do curso">
+            </div>
+            
+            <div class="input-group">
+                <label for="ano-conclusao">Ano de Conclusão</label>
+                <input type="number" id="ano-conclusao" placeholder="AAAA">
+            </div>
+            
+            <a href="#" class="btn">Enviar para Validação</a>
+        </div>
+        
+        <div class="card">
+            <h3>Status da Validação</h3>
+            <p style="color: #ff9800;">⏳ Pendente de análise</p>
+            <p style="font-size: 14px; margin-top: 10px;">Seus documentos foram recebidos em 10/05/2023 e estão em análise.</p>
+        </div>
+        
+        <div class="tab-bar">
+            <a href="dashboard.html">
+                <span class="icon">🏠</span>
+                <span>Início</span>
+            </a>
+            <a href="biblioteca.html">
+                <span class="icon">📚</span>
+                <span>Biblioteca</span>
+            </a>
+            <a href="mapa-oportunidades.html">
+                <span class="icon">🔍</span>
+                <span>Oportunidades</span>
+            </a>
+            <a href="desempenho.html">
+                <span class="icon">📊</span>
+                <span>Desempenho</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Hub - Cadastrar Oportunidades</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="dashboard.html" class="icon">←</a>
+            <div class="logo">Study Hub</div>
+            <a href="perfil.html" class="icon">👤</a>
+        </header>
+        
+        <h2>Cadastrar Oportunidade</h2>
+        
+        <div class="card">
+            <h3>Informações Básicas</h3>
+            
+            <div class="input-group">
+                <label for="titulo-oportunidade">Título da Oportunidade</label>
+                <input type="text" id="titulo-oportunidade" placeholder="Ex: Estágio em Engenharia">
+            </div>
+            
+            <div class="input-group">
+                <label for="tipo-oportunidade">Tipo</label>
+                <select id="tipo-oportunidade">
+                    <option>Selecione...</option>
+                    <option>Estágio</option>
+                    <option>Emprego</option>
+                    <option>Bolsa de estudos</option>
+                    <option>Curso gratuito</option>
+                </select>
+            </div>
+            
+            <div class="input-group">
+                <label for="area-oportunidade">Área</label>
+                <input type="text" id="area-oportunidade" placeholder="Ex: Tecnologia, Saúde, Educação">
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Detalhes</h3>
+            
+            <div class="input-group">
+                <label for="descricao-oportunidade">Descrição</label>
+                <textarea id="descricao-oportunidade" placeholder="Descreva a oportunidade em detalhes" style="min-height: 100px;"></textarea>
+            </div>
+            
+            <div class="input-group">
+                <label for="requisitos-oportunidade">Requisitos</label>
+                <textarea id="requisitos-oportunidade" placeholder="Liste os requisitos necessários" style="min-height: 80px;"></textarea>
+            </div>
+            
+            <div class="input-group">
+                <label for="beneficios-oportunidade">Benefícios</label>
+                <textarea id="beneficios-oportunidade" placeholder="Descreva os benefícios oferecidos" style="min-height: 80px;"></textarea>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Informações Adicionais</h3>
+            
+            <div class="input-group">
+                <label for="local-oportunidade">Local</label>
+                <input type="text" id="local-oportunidade" placeholder="Ex: São Paulo/SP ou Remoto">
+            </div>
+            
+            <div class="input-group">
+                <label for="prazo-oportunidade">Prazo</label>
+                <input type="date" id="prazo-oportunidade">
+            </div>
+            
+            <div class="input-group">
+                <label for="link-oportunidade">Link para mais informações</label>
+                <input type="url" id="link-oportunidade" placeholder="https://">
+            </div>
+            
+            <a href="#" class="btn">Publicar Oportunidade</a>
+        </div>
+        
+        <div class="tab-bar">
+            <a href="dashboard.html">
+                <span class="icon">🏠</span>
+                <span>Início</span>
+            </a>
+            <a href="cadastrar-oportunidades.html" class="active-tab">
+                <span class="icon">➕</span>
+                <span>Oportunidades</span>
+            </a>
+            <a href="cadastrar-cursos.html">
+                <span class="icon">🎓</span>
+                <span>Cursos</span>
+            </a>
+            <a href="relatorio-impacto.html">
+                <span class="icon">📈</span>
+                <span>Relatórios</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

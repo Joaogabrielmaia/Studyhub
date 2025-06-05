@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Hub - Criar Conteúdo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="dashboard.html" class="icon">←</a>
+            <div class="logo">Study Hub</div>
+            <a href="perfil.html" class="icon">👤</a>
+        </header>
+        
+        <h2>Criar Conteúdo</h2>
+        
+        <div class="card">
+            <h3>Tipo de Conteúdo</h3>
+            <select style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px;">
+                <option>Selecione o tipo...</option>
+                <option>Aula</option>
+                <option>Material de Estudo</option>
+                <option>Quiz</option>
+                <option>Lista de Exercícios</option>
+            </select>
+        </div>
+        
+        <div class="card">
+            <h3>Informações Básicas</h3>
+            
+            <div class="input-group">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" placeholder="Título do conteúdo">
+            </div>
+            
+            <div class="input-group">
+                <label for="disciplina">Disciplina</label>
+                <input type="text" id="disciplina" placeholder="Ex: Matemática, Programação">
+            </div>
+            
+            <div class="input-group">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" placeholder="Descreva o conteúdo" style="min-height: 80px;"></textarea>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Conteúdo Principal</h3>
+            
+            <div style="border: 2px dashed #ddd; padding: 20px; text-align: center; margin: 15px 0; border-radius: 8px;">
+                <p>📄 Arraste ou clique para enviar arquivos</p>
+                <input type="file" style="display: none;" id="conteudo-upload">
+                <label for="conteudo-upload" class="btn btn-outline" style="display: inline-block; width: auto;">Adicionar Arquivos</label>
+            </div>
+            
+            <p style="font-size: 12px; color: #666;">Ou</p>
+            
+            <div class="input-group">
+                <label for="link">Link Externo</label>
+                <input type="url" id="link" placeholder="https://">
+            </div>
+            
+            <div class="input-group">
+                <label for="texto">Texto (Editor)</label>
+                <textarea id="texto" placeholder="Digite seu conteúdo aqui..." style="min-height: 150px;"></textarea>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Configurações</h3>
+            
+            <div class="input-group">
+                <label for="visibilidade">Visibilidade</label>
+                <select id="visibilidade" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                    <option>Público</option>
+                    <option>Privado (apenas meus alunos)</option>
+                    <option>Grupo específico</option>
+                </select>
+            </div>
+            
+            <a href="#" class="btn">Publicar Conteúdo</a>
+        </div>
+        
+        <div class="tab-bar">
+            <a href="dashboard.html">
+                <span class="icon">🏠</span>
+                <span>Início</span>
+            </a>
+            <a href="criar-conteudo.html" class="active-tab">
+                <span class="icon">✏️</span>
+                <span>Criar</span>
+            </a>
+            <a href="calendario-aulas.html">
+                <span class="icon">📅</span>
+                <span>Aulas</span>
+            </a>
+            <a href="desempenho.html">
+                <span class="icon">📊</span>
+                <span>Alunos</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Hub - Agendar Mentoria</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="dashboard.html" class="icon">←</a>
+            <div class="logo">Study Hub</div>
+            <a href="perfil.html" class="icon">👤</a>
+        </header>
+        
+        <h2>Agendar Mentoria</h2>
+        
+        <div class="card">
+            <h3>Selecione o Mentor</h3>
+            <select style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px;">
+                <option>Prof. Carlos Silva (Matemática)</option>
+                <option>Prof. Ana Souza (Programação)</option>
+                <option>Prof. Marcos Lima (Redação)</option>
+            </select>
+        </div>
+        
+        <div class="card">
+            <h3>Selecione a Data</h3>
+            <input type="date" style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px;">
+            
+            <h3 style="margin-top: 15px;">Horários Disponíveis</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;">
+                <button class="btn btn-small btn-outline">09:00</button>
+                <button class="btn btn-small btn-outline">10:00</button>
+                <button class="btn btn-small btn-outline">11:00</button>
+                <button class="btn btn-small btn-outline">14:00</button>
+                <button class="btn btn-small">15:00</button>
+                <button class="btn btn-small btn-outline">16:00</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Detalhes da Mentoria</h3>
+            <textarea style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; min-height: 100px;" placeholder="Descreva os tópicos que gostaria de abordar..."></textarea>
+            
+            <a href="#" class="btn">Confirmar Agendamento</a>
+        </div>
+        
+        <div class="tab-bar">
+            <a href="dashboard.html">
+                <span class="icon">🏠</span>
+                <span>Início</span>
+            </a>
+            <a href="biblioteca.html">
+                <span class="icon">📚</span>
+                <span>Biblioteca</span>
+            </a>
+            <a href="mapa-oportunidades.html">
+                <span class="icon">🔍</span>
+                <span>Oportunidades</span>
+            </a>
+            <a href="desempenho.html">
+                <span class="icon">📊</span>
+                <span>Desempenho</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
