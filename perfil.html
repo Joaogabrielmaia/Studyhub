@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Hub - Perfil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="dashboard.html" class="icon">←</a>
+            <div class="logo">Study Hub</div>
+            <div style="width: 24px;"></div> <!-- Espaçador -->
+        </header>
+        
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="assets/imagens/profile-icon.png" alt="Perfil" style="width: 100px; height: 100px; border-radius: 50%;">
+            <h2>Seu Nome</h2>
+            <p>seu@email.com</p>
+            <a href="#" class="btn btn-small btn-outline" style="display: inline-block; width: auto;">Editar Perfil</a>
+        </div>
+        
+        <div class="card">
+            <h3>Configurações</h3>
+            
+            <div class="input-group">
+                <label for="notifications">Notificações</label>
+                <select id="notifications" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                    <option>Ativadas</option>
+                    <option>Desativadas</option>
+                </select>
+            </div>
+            
+            <div class="input-group">
+                <label for="theme">Tema</label>
+                <select id="theme" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                    <option>Claro</option>
+                    <option>Escuro</option>
+                    <option>Automático</option>
+                </select>
+            </div>
+            
+            <a href="#" class="btn btn-outline" style="margin-top: 10px;">Alterar Senha</a>
+        </div>
+        
+        <div class="card">
+            <h3>Sobre</h3>
+            <p>Study Hub v1.0</p>
+            <p style="color: #666; font-size: 14px;">© 2023 Study Hub Team</p>
+            
+            <a href="#" class="btn btn-outline" style="margin-top: 15px;">Termos de Uso</a>
+            <a href="#" class="btn btn-outline" style="margin-top: 10px;">Política de Privacidade</a>
+            <a href="index.html" class="btn" style="margin-top: 20px; background-color: #ff4a4a;">Sair</a>
+        </div>
+        
+        <div class="tab-bar">
+            <a href="dashboard.html">
+                <span class="icon">🏠</span>
+                <span>Início</span>
+            </a>
+            <a href="biblioteca.html">
+                <span class="icon">📚</span>
+                <span>Biblioteca</span>
+            </a>
+            <a href="grupos.html">
+                <span class="icon">👥</span>
+                <span>Grupos</span>
+            </a>
+            <a href="desempenho.html">
+                <span class="icon">📊</span>
+                <span>Desempenho</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
